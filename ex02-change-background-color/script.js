@@ -3,9 +3,14 @@
 const firstBtn = document.querySelector('.red');
 const secBtn  = document.querySelector('.green'); 
 const thirBtn = document.querySelector('.blue');
+const backgroundColor = document.querySelector('h1');
+backgroundColor.style.color = 'yellow';
+backgroundColor.style.width = "50%"
+backgroundColor.textContent = "Hooyo Mcn"
 
 firstBtn.addEventListener("click", function(){
     document.body.style.backgroundColor = "red";
+    console.log("The Event is Added.")
 });
 
 secBtn.addEventListener('click', function(){
