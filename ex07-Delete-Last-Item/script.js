@@ -6,9 +6,10 @@ const mainHeading = document.querySelector('#myList');
 const deleteBtn = document.querySelector('.btn');
 const list = document.querySelector('li');
 
-let count = 1;
+// let count = 0;
 deleteBtn.addEventListener('click', function(){ 
-// list.textContent = `item ${count}`;
-    mainHeading.remove(list);
-    count--;
+
+    mainHeading.lastElementChild.remove(list);
+    
+    // count--;
 })
